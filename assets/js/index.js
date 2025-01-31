@@ -16,7 +16,7 @@ let addBtn = document.getElementById("addBtn")
 // * ========|> app variables
 const nameRegex = /^[A-Z][a-z]{3,}$/
 const priceRegex= /^([1-9]|[1-9][0-9]|100)$/
-const descriptionRegex= /^[a-zA-Z]{20,100}$/
+const descriptionRegex= /^[a-zA-Z ]{10,100}$/
 const categoryRegex= /^[A-Z][A-Za-z]{3,}$/
 let updatedIndex ;
 let productList = JSON.parse(localStorage.getItem("products")) || []
